@@ -26,16 +26,16 @@ spec:
     spec:
       containers:
         - name: backend
-        image: sujit2000/backend:pip2
-        imagePullPolicy: Always
-        ports:
-          - containerPort: 8081
-        env:
-          - name: MYSQL_HOST
-            value: "mysql-service"
-          - name: MYSQL_PORT
-            value: "3306"
-          - name: MYSQL_USER
-            value: "root"
-          - name: MYSQL_PASSWORD
-            value: "2003"
+          image: sujit2000/backend:pip2
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8081
+          env:
+            - name: MYSQL_HOST
+              value: "mysql-service"
+            - name: MYSQL_PORT
+              value: "3306"
+            - name: MYSQL_USER
+              value: "root"
+            - name: MYSQL_PASSWORD
+              value: "2003"
