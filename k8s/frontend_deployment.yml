@@ -25,15 +25,6 @@ spec:
      labels:
        app: frontend
    spec:
-     replicas: 1
- selector:
-   matchLabels:
-     app: frontend
- template:
-   metadata:
-     labels:
-       app: frontend
-   spec:
      containers:
        - name: frontend
          image: sujit2000/frontend:pip2
